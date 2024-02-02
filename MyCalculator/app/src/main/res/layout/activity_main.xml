@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/realblack"
+    >
+
+
+
+    <include layout="@layout/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include1"
+       />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="@color/realblack"
+        android:layout_marginBottom="10dp" >
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/about"
+            android:layout_above="@+id/textview1"
+            android:src="@drawable/about"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/realblack"
+            />
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/my_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/finalbutton"/>
+
+        <include
+            android:id="@+id/finalbutton"
+            layout="@layout/finalbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

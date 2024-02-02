@@ -1,0 +1,4 @@
+include ':javaluator-3.0.1'
+include ':rhino-1.7.11'
+include ':app'
+rootProject.name = "Final Kalkulator"
